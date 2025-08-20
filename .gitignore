@@ -1,0 +1,57 @@
+# Student environment files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Student work (they should submit via PR)
+assignments/CSCI347_f25_*/
+
+# Instructor-only materials (private repo separation)
+instructor/grading-examples.md
+instructor/answer-keys/
+instructor/gradebook-templates/
+
+# Large files that should use Git LFS
+*.img
+*.dd
+*.raw
+*.vmdk
+*.ova
+*.iso
+
+# Temporary files
+*.tmp
+temp/
+.cache/
+
+# Log files
+*.log
+logs/
+
+# Secret keys and passwords (should never be committed)
+*.key
+*.pem
+secret*
+password*
+*secret*
+*password*
+config/secrets.json

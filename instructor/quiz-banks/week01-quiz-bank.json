@@ -1,0 +1,159 @@
+{
+  "quiz_metadata": {
+    "week": 1,
+    "title": "Cryptography Basics Knowledge Check",
+    "description": "Low-stakes quiz covering symmetric encryption, key management, and security best practices",
+    "points": 10,
+    "time_limit_minutes": 15,
+    "attempts_allowed": 2,
+    "question_count": 10
+  },
+  "questions": [
+    {
+      "id": "w1_q1",
+      "type": "multiple_choice",
+      "points": 1,
+      "question": "What does it mean that AES is a \"symmetric\" encryption algorithm?",
+      "options": [
+        "It produces the same output every time for the same input",
+        "The same key is used for both encryption and decryption",
+        "It can only encrypt data that is symmetrically structured", 
+        "It uses mathematical symmetry in its internal operations"
+      ],
+      "correct_answer": 1,
+      "explanation": "Symmetric encryption means the same secret key is used for both encrypting and decrypting data. This is in contrast to asymmetric encryption, where different keys (public/private key pair) are used."
+    },
+    {
+      "id": "w1_q2", 
+      "type": "multiple_choice",
+      "points": 1,
+      "question": "Which security feature does Python's Fernet provide automatically?",
+      "options": [
+        "Key rotation every 24 hours",
+        "Built-in message authentication (integrity checking)",
+        "Automatic password generation",
+        "Quantum-resistant encryption"
+      ],
+      "correct_answer": 1,
+      "explanation": "Fernet automatically includes HMAC authentication with every encrypted message, ensuring both confidentiality and integrity. This means you can detect if the ciphertext has been tampered with."
+    },
+    {
+      "id": "w1_q3",
+      "type": "true_false", 
+      "points": 1,
+      "question": "It's safe to generate a new random key each time you want to encrypt data, as long as the key is strong.",
+      "correct_answer": false,
+      "explanation": "If you generate a new key each time, you won't be able to decrypt your previously encrypted data. The same key must be used for both encryption and decryption."
+    },
+    {
+      "id": "w1_q4",
+      "type": "multiple_choice",
+      "points": 1, 
+      "question": "Why do we use PBKDF2 for password-based key derivation instead of just hashing the password with SHA-256?",
+      "options": [
+        "SHA-256 is not secure enough for passwords",
+        "PBKDF2 makes the key derivation process intentionally slow",
+        "PBKDF2 produces longer keys than SHA-256",
+        "PBKDF2 doesn't require a salt"
+      ],
+      "correct_answer": 1,
+      "explanation": "PBKDF2 uses many iterations (e.g., 100,000+) to make brute force attacks much more expensive. A single SHA-256 hash is too fast, allowing attackers to try millions of passwords per second."
+    },
+    {
+      "id": "w1_q5",
+      "type": "multiple_choice",
+      "points": 1,
+      "question": "When using PBKDF2, the salt should be:",
+      "options": [
+        "The same for all users to ensure consistency",
+        "Based on the user's password for predictability",
+        "Randomly generated and unique for each password", 
+        "Derived from the current date and time"
+      ],
+      "correct_answer": 2,
+      "explanation": "Each password should have its own random salt to prevent rainbow table attacks and ensure that identical passwords don't produce the same derived key."
+    },
+    {
+      "id": "w1_q6",
+      "type": "true_false",
+      "points": 1,
+      "question": "ECB (Electronic Codebook) mode is dangerous because identical plaintext blocks produce identical ciphertext blocks.",
+      "correct_answer": true,
+      "explanation": "ECB mode encrypts each block independently with the same key, so identical plaintext blocks always produce identical ciphertext blocks. This can leak information about the plaintext structure."
+    },
+    {
+      "id": "w1_q7",
+      "type": "multiple_choice", 
+      "points": 1,
+      "question": "When encrypting a file, what's the most important thing to remember about the original file?",
+      "options": [
+        "Always delete it immediately after encryption",
+        "Keep it but make sure it's write-protected",
+        "Consider whether you need to securely delete it",
+        "Rename it to hide its original contents"
+      ],
+      "correct_answer": 2,
+      "explanation": "If the original file contained sensitive data, simply deleting it might not be enough since the data could be recovered from disk. Secure deletion might be necessary depending on your security requirements."
+    },
+    {
+      "id": "w1_q8",
+      "type": "short_answer",
+      "points": 1,
+      "question": "Explain why we use 'rb' and 'wb' modes when reading and writing encrypted files in Python, rather than 'r' and 'w'. (2-3 sentences)",
+      "sample_answer": "We use binary modes ('rb' and 'wb') because encrypted data is binary, not text. Text modes ('r' and 'w') try to decode/encode data as UTF-8, which will fail or corrupt binary data. Encryption produces random bytes that don't represent valid text characters.",
+      "grading_criteria": "Full credit for mentioning binary data and encoding issues. Partial credit for understanding that encrypted data isn't text."
+    },
+    {
+      "id": "w1_q9",
+      "type": "multiple_choice",
+      "points": 1,
+      "question": "What should your program do if a user enters the wrong password when trying to decrypt a file?",
+      "options": [
+        "Keep asking for the password until they get it right",
+        "Display a helpful error message and exit gracefully",
+        "Try to decrypt anyway and show the corrupted result", 
+        "Automatically generate a new password for them"
+      ],
+      "correct_answer": 1,
+      "explanation": "Good error handling means giving users clear feedback about what went wrong without being pushy or dangerous. The program should handle the exception from failed decryption and give a clear message."
+    },
+    {
+      "id": "w1_q10",
+      "type": "multiple_choice",
+      "points": 1,
+      "question": "Which of these is the WORST practice for handling encryption keys in your code?",
+      "options": [
+        "Storing keys in environment variables",
+        "Hardcoding keys directly in your source code",
+        "Deriving keys from user passwords with PBKDF2",
+        "Generating keys with Fernet.generate_key()"
+      ],
+      "correct_answer": 1,
+      "explanation": "Hardcoded keys are visible to anyone who can see your source code and can't be changed without modifying code. This is a critical security vulnerability."
+    }
+  ],
+  "score_interpretation": {
+    "excellent": {
+      "range": [9, 10],
+      "message": "Excellent understanding! You're ready for the assignment."
+    },
+    "good": {
+      "range": [7, 8], 
+      "message": "Good grasp of concepts. Review any missed topics before assignment."
+    },
+    "basic": {
+      "range": [5, 6],
+      "message": "Basic understanding present. Strongly recommend reviewing readings and tutorial."
+    },
+    "needs_improvement": {
+      "range": [0, 4],
+      "message": "Significant gaps in understanding. Please review materials and consider office hours."
+    }
+  },
+  "review_recommendations": {
+    "questions_1_2": "Review the basic concepts of symmetric encryption and why Fernet includes authentication.",
+    "questions_3_5": "Focus on key management and PBKDF2 concepts. These are crucial for the assignment.",
+    "questions_6_7": "Review encryption modes and file handling security considerations.", 
+    "questions_8_10": "Focus on implementation details and security best practices in Python."
+  }
+}
