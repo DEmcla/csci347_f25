@@ -3,7 +3,14 @@
 **Prerequisites**: Weeks 1-3 completed, PKI understanding  
 **Time Commitment**: 8-10 hours total  
 
-## 🎯 Learning Objectives
+## Start Here (5 minutes)
+
+1. **Complete readings** - [Required Reading](#required-reading) 
+2. **Follow tutorial** - [Tutorial](tutorial.md)
+3. **Complete assignment** - [Assignment](assignment.md) 
+4. **Take quiz** - [Quiz](quiz.md)
+
+## Learning Objectives
 
 1. **Implement multi-factor authentication** (MFA) with TOTP and SMS
 2. **Design secure login systems** with proper session management

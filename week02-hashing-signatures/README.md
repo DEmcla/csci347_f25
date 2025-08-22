@@ -3,7 +3,14 @@
 **Time Commitment**: 7-8 hours total  
 **Prerequisites**: Week 1 completed, understanding of symmetric encryption
 
-## 🎯 Learning Objectives
+## Start Here (5 minutes)
+
+1. **Complete readings** - [Required Reading](#required-reading-4-hours) (4 hours)
+2. **Follow tutorial** - [Tutorial](tutorial.md) (2 hours)
+3. **Complete assignment** - [Assignment](assignment.md) (2 hours)
+4. **Take quiz** - [Quiz](quiz.md) (30 min)
+
+## Learning Objectives
 
 By the end of this week, you will be able to:
 

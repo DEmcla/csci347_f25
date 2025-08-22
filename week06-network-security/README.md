@@ -3,7 +3,14 @@
 **Prerequisites**: Weeks 1-5 completed  
 **Time Commitment**: 8-10 hours total  
 
-## 🎯 Learning Objectives
+## Start Here (5 minutes)
+
+1. **Complete readings** - [Required Reading](#required-reading) 
+2. **Follow tutorial** - [Tutorial](tutorial.md)
+3. **Complete assignment** - [Assignment](assignment.md) 
+4. **Take quiz** - [Quiz](quiz.md)
+
+## Learning Objectives
 
 1. **Deploy and configure pfSense firewall** with advanced rules
 2. **Implement network segmentation** and VLANs for security

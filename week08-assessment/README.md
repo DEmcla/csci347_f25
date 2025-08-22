@@ -3,7 +3,14 @@
 **Prerequisites**: Week 7 completed  
 **Time Commitment**: 8-10 hours total  
 
-## 🎯 Learning Objectives
+## Start Here (5 minutes)
+
+1. **Complete readings** - [Required Reading](#required-reading) 
+2. **Follow tutorial** - [Tutorial](tutorial.md)
+3. **Complete assignment** - [Assignment](assignment.md) 
+4. **Take quiz** - [Quiz](quiz.md)
+
+## Learning Objectives
 
 1. **Conduct comprehensive vulnerability assessments** using OpenVAS/Greenbone
 2. **Perform network penetration testing** with ethical hacking techniques

@@ -1,27 +1,30 @@
 # CSCI 347: Network Security and Digital Forensics
 
-**🎯 Current Focus: Week 1 - Cryptography Basics**
+**Current Focus: Week 1 - Cryptography Basics**
 
 ## Quick Start (5 minutes)
-1. **Environment Setup** → [Setup Guide](../setup/) (15 min)
-2. **This Week's Learning** → [Week 1](../week01-crypto-basics/) (6-8 hours)
-3. **Need Help?** → [Troubleshooting](../resources/troubleshooting.md)
+1. **Environment Setup** - [Setup Guide](../setup/) (15 min)
+2. **This Week's Learning** - [Week 1](../week01-crypto-basics/) (6-8 hours)
+3. **Need Help?** - [Troubleshooting](../resources/troubleshooting.md)
 
 ## This Week's Goal
 Build a secure password vault using Python cryptography
 
-## Today's Tasks
-**📚 Reading** (45 min):
+## Learning Sequence - Follow This Order
+**Reading** (45 min):
 - [ ] Crypto 101 Ch 1-2: [Link](https://www.crypto101.io/) pages 1-30
 - [ ] Python Cryptography docs: Fernet section
 
-**🛠️ Hands-on** (2-3 hours):
+**Tutorial** (3 hours):
 - [ ] Complete tutorial modules 1-4
-- [ ] Start assignment implementation
+- [ ] Run validation checkpoints
 
-**✅ Validation**:
-- [ ] Run environment check: `python setup/verify-environment.py`
-- [ ] Complete tutorial checkpoints
+**Assignment** (3 hours):
+- [ ] Complete password vault project
+- [ ] Test all functionality
+
+**Quiz** (30 min):
+- [ ] Take knowledge assessment quiz
 
 ## Assignment Due
 **End of Week 1** - Submit via Pull Request
@@ -29,11 +32,12 @@ Build a secure password vault using Python cryptography
 ## Quick Links
 | Need | Link | Time |
 |------|------|------|
-| 🏁 **Start here** | [Week 1 Overview](../week01-crypto-basics/README.md) | 2 min |
-| 🔧 **Setup help** | [Environment setup](../setup/) | 15 min |
-| 📖 **Tutorial** | [Hands-on crypto](../week01-crypto-basics/tutorial.md) | 3 hours |
-| 📝 **Assignment** | [Password vault project](../week01-crypto-basics/assignment.md) | 3 hours |
-| ❓ **Stuck?** | [Quick help](../quick-reference/) | 1 min |
+| **Start here** | [Week 1 Overview](../week01-crypto-basics/README.md) | 2 min |
+| **Setup help** | [Environment setup](../setup/) | 15 min |
+| **Tutorial** | [Hands-on crypto](../week01-crypto-basics/tutorial.md) | 3 hours |
+| **Assignment** | [Password vault project](../week01-crypto-basics/assignment.md) | 3 hours |
+| **Quiz** | [Knowledge assessment](../week01-crypto-basics/quiz.md) | 30 min |
+| **Stuck?** | [Quick help](../quick-reference/) | 1 min |
 
 ---
 

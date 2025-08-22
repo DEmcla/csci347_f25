@@ -1,17 +1,17 @@
 # Week 1: Cryptography Basics
 
-**🎯 This Week's Goal**: Build a secure password vault using Python cryptography
+**This Week's Goal**: Build a secure password vault using Python cryptography
 
-**⏱️ Time Budget**: 7-8 hours | **Due**: End of Week 1
+**Time Budget**: 7-8 hours | **Due**: End of Week 1
 
-## 🚀 Start Here (5 minutes)
+## Start Here (5 minutes)
 
-1. **📚 Read first** → [Crypto 101 Ch 1-2](https://www.crypto101.io/) (45 min)
-2. **🛠️ Then practice** → [Tutorial](tutorial.md) (3 hours)
-3. **📝 Build project** → [Assignment](assignment.md) (3 hours)
-4. **✅ Test knowledge** → [Quiz](quiz.md) (30 min)
+1. **Read first** - [Crypto 101 Ch 1-2](https://www.crypto101.io/) (45 min)
+2. **Then practice** - [Tutorial](tutorial.md) (3 hours)
+3. **Build project** - [Assignment](assignment.md) (3 hours)
+4. **Test knowledge** - [Quiz](quiz.md) (30 min)
 
-**❓ Need help?** → [Week overview](../quick-reference/week-at-a-glance.md) (1 min)
+**Need help?** - [Week overview](../quick-reference/week-at-a-glance.md) (1 min)
 
 ## 📚 This Week's Materials
 
